@@ -1,0 +1,27 @@
+
+Packages to Install
+====================
+npm install jsonwebtoken bcrypt dotenv
+
+
+
+
+
+
+
+
+
+
+# Test the API is running
+curl http://localhost:3000/
+
+# Get all users
+curl http://localhost:3000/api/users
+
+# Get specific user
+curl http://localhost:3000/api/users/1
+
+# Create new user
+curl -X POST http://localhost:3000/api/users \
+  -H "Content-Type: application/json" \
+  -d '{"name":"John Doe","email":"john@example.com"}'
